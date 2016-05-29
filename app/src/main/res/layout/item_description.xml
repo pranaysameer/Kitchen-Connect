@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    android:background="@drawable/orange"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Item Name"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageSwitcher
+        android:layout_width="253dp"
+        android:layout_height="180dp"
+        android:id="@+id/itemview"
+        android:src="@drawable/curry2"
+        android:layout_below="@+id/item_name"
+       />
+    <View android:id="@+id/separator"
+        android:background="#ffffff"
+        android:layout_width = "2dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/item_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chef&apos;s Word:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/itemview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/text_description"
+        android:layout_alignEnd="@+id/text_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_description"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/itemview"
+        android:layout_alignEnd="@+id/itemview"
+        android:layout_alignParentBottom="true"
+        android:text="Description: \n DESCRIPTION_HERE" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_dialog"
+        android:src="@drawable/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Comments:"
+        android:id="@+id/comments"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@+id/itemview"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_alignRight="@+id/quantity"
+        android:layout_alignEnd="@+id/quantity" />
+    <View android:id="@+id/separator1"
+        android:background="#ffffff"
+        android:layout_width = "200dp"
+        android:layout_height="2dp"
+        android:layout_alignRight="@+id/close_dialog"
+        android:layout_alignEnd="@+id/close_dialog"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/separator"
+        android:layout_toEndOf="@+id/separator" />
+    <View android:id="@+id/separator3"
+        android:background="#ffffff"
+        android:layout_width = "200dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/close_dialog"
+        android:layout_alignLeft="@+id/separator"
+        android:layout_alignStart="@+id/separator"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <View android:id="@+id/separator2"
+        android:background="#ffffff"
+        android:layout_width = "200dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/text_description"
+        android:layout_toRightOf="@+id/separator"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add to Platter"
+        android:id="@+id/addtoplatter"
+        android:layout_below="@+id/separator2"
+        android:layout_toRightOf="@+id/separator"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quantity"
+        android:id="@+id/textView5"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/separator1"
+        android:layout_alignStart="@+id/separator1"
+        android:layout_below="@+id/separator1"
+        android:layout_above="@+id/addtoplatter" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/item_plus"
+        android:src="@drawable/plus"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/separator1"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00"
+        android:paddingLeft="7dp"
+        android:id="@+id/quantity"
+        android:layout_alignTop="@+id/item_plus"
+        android:layout_toRightOf="@+id/item_plus"
+        android:layout_toEndOf="@+id/item_plus" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingLeft="0dp"
+        android:id="@+id/item_minus"
+        android:src="@drawable/minus"
+        android:layout_alignTop="@+id/quantity"
+        android:layout_toLeftOf="@+id/close_dialog"
+        android:layout_toStartOf="@+id/close_dialog" />
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs."
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs.100"
+        android:id="@+id/price"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editcomment"
+        android:textSize="20dp"
+        android:hint="Add Your Comments here..."
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/comments"
+        android:layout_toRightOf="@+id/separator"
+        android:layout_toEndOf="@+id/separator"
+        android:layout_above="@+id/textView2" />
+
+</RelativeLayout>

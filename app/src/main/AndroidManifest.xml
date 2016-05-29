@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naveenkumar.mykc">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Kitchen Connect"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".category"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".catselected"
+            android:screenOrientation="landscape" />
+        <activity android:name=".platter"
+            android:screenOrientation="landscape"/>
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="ukVH9Aknb9LO8HU8gMMZ8V3UMDTEldWRTG0IlPJV" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="2CRvMoz0C4APhKjuBxtjEt2lBbutKF9jInKfj1nN" />
+    </application>
+
+</manifest>

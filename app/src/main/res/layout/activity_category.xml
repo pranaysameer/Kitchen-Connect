@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        tools:context="com.example.naveenkumar.kitchenconnect.Categories">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_dessert"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/desserts"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_curries"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/curries"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_above="@+id/cat_dessert_text"
+            android:layout_alignLeft="@+id/cat_curries_text"
+            android:layout_alignStart="@+id/cat_curries_text" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_soups"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/soups"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_above="@+id/cat_soups_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_continental"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/continental"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_below="@+id/cat_dessert_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_chinese"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/chinese"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignTop="@+id/cat_biryani"
+            android:layout_alignRight="@+id/cat_soups_text"
+            android:layout_alignEnd="@+id/cat_soups_text" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_biryani"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/biryani"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_above="@+id/cat_continental_text"
+            android:layout_alignLeft="@+id/cat_curries_text"
+            android:layout_alignStart="@+id/cat_curries_text" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cat_starters"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/starter"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_below="@+id/cat_continental_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Curries"
+            android:id="@+id/cat_curries_text"
+            android:layout_below="@+id/cat_curries"
+            android:layout_centerHorizontal="true"
+            android:width="100dp"
+            android:textAlignment="center"
+            android:height="30dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Soups"
+            android:id="@+id/cat_soups_text"
+            android:layout_alignTop="@+id/cat_curries_text"
+            android:layout_alignRight="@+id/cat_soups"
+            android:layout_alignEnd="@+id/cat_soups"
+            android:width="100dp"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Desserts"
+            android:id="@+id/cat_dessert_text"
+            android:layout_below="@+id/cat_dessert"
+            android:layout_alignLeft="@+id/cat_dessert"
+            android:layout_alignStart="@+id/cat_dessert"
+            android:width="100dp"
+            android:textAlignment="center"
+            android:height="50dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Biryani"
+            android:id="@+id/cat_biryani_text"
+            android:width="100dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/cat_biryani"
+            android:layout_alignLeft="@+id/cat_curries"
+            android:layout_alignStart="@+id/cat_curries" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Chinese"
+            android:id="@+id/cat_chinese_text"
+            android:layout_alignBottom="@+id/cat_biryani_text"
+            android:layout_alignLeft="@+id/cat_soups_text"
+            android:layout_alignStart="@+id/cat_soups_text"
+            android:width="100dp"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Continental"
+            android:id="@+id/cat_continental_text"
+            android:layout_below="@+id/cat_continental"
+            android:layout_alignLeft="@+id/cat_continental"
+            android:layout_alignStart="@+id/cat_continental"
+            android:width="105dp"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Starters"
+            android:id="@+id/cat_starters_text"
+            android:width="100dp"
+            android:height="30dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/cat_starters"
+            android:layout_alignRight="@+id/cat_starters"
+            android:layout_alignEnd="@+id/cat_starters" />
+
+    </RelativeLayout>
+</ScrollView>
